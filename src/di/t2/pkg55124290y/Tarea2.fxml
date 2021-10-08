@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+          prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" 
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.t2.pkg55124290y.Tarea2Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="¡ Hola, mundo !">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="¿Cómo te llamas?" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="labelSaludo" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="30.0" left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="txtNombre" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" top="50.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button fx:id="btnSaludar" mnemonicParsing="false" onAction="#funcionSaludar" 
+              text="Di, Hola" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" top="50.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>
+
